@@ -3,7 +3,7 @@
 - graph : 二維vector, directed graph, graph[i]表示i可以走到哪些點
 - visited : 紀錄此點是否已走過
 - todo : 紀錄此點之後的點是否尚未做完(後面還有點要走，所以還要todo)  
-![graph](https://github.com/kow3388/DS_and_Algo/blob/main/Algo/detect_cycle/graph.jpg)
+![graph](graph.jpg)
 
 | Point_idx |          |          |
 | --------- | -------- | -------- |
