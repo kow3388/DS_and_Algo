@@ -17,32 +17,32 @@
 Given an array nums = **[−2, 1, −3, 4, −1, 2, 1, −5, 4]**, find the maximum subarray value
 
 1. Initial
-   **max_ending_here = -2, max_so_far = -2**
+   **max_ending_here = -2, max_so_far = -2**  
    [**<font color="#f00">−2</font>**, 1, −3, 4, −1, 2, 1, −5, 4]
    
 2. Swing all array
-   **max_ending_here = 1, max_so_far = 1**
+   **max_ending_here = 1, max_so_far = 1**  
    [−2, **<font color="#f00">1</font>**, −3, 4, −1, 2, 1, −5, 4]
    
-   **max_ending_here = -2, max_so_far = 1**
+   **max_ending_here = -2, max_so_far = 1**  
    [−2, 1, **<font color="#f00">−3</font>**, 4, −1, 2, 1, −5, 4]
    
-   **max_ending_here = 4, max_so_far = 4**
+   **max_ending_here = 4, max_so_far = 4**  
    [−2, 1, −3, **<font color="#f00">4</font>**, −1, 2, 1, −5, 4]
    
-   **max_ending_here = 3, max_so_far = 4**
+   **max_ending_here = 3, max_so_far = 4**  
    [−2, 1, −3, 4, **<font color="#f00">−1</font>**, 2, 1, −5, 4]
    
-   **max_ending_here = 5, max_so_far = 5**
+   **max_ending_here = 5, max_so_far = 5**  
    [−2, 1, −3, 4, −1, **<font color="#f00">2</font>**, 1, −5, 4]
    
-   **max_ending_here = 6, max_so_far = 6**
+   **max_ending_here = 6, max_so_far = 6**  
    [−2, 1, −3, 4, −1, 2, **<font color="#f00">1</font>**, −5, 4]
    
-   **max_ending_here = 1, max_so_far = 6**
+   **max_ending_here = 1, max_so_far = 6**  
    [−2, 1, −3, 4, −1, 2, 1, **<font color="#f00">-5</font>**, 4]
    
-   **max_ending_here = 5, max_so_far = 6**
+   **max_ending_here = 5, max_so_far = 6**  
    [−2, 1, −3, 4, −1, 2, 1, -5, **<font color="#f00">4</font>**]
    
 3. Return maximum subarray
