@@ -16,11 +16,11 @@
 ## Example
 Given an array nums = **[−2, 1, −3, 4, −1, 2, 1, −5, 4]**, find the maximum subarray value
 
-1. Initial
+1. Initial  
    **max_ending_here = -2, max_so_far = -2**  
    [**<font color="#f00">−2</font>**, 1, −3, 4, −1, 2, 1, −5, 4]
    
-2. Swing all array
+2. Swing all array  
    **max_ending_here = 1, max_so_far = 1**  
    [−2, **<font color="#f00">1</font>**, −3, 4, −1, 2, 1, −5, 4]
    
