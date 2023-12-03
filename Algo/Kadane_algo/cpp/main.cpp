@@ -1,4 +1,4 @@
-#include "Kadane/Kadane.hpp"
+#include "Kadane.hpp"
 #include <bits/stdc++.h>
 
 //maximum subarray

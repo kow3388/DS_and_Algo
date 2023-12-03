@@ -1,4 +1,4 @@
-import Kadane.Kadane as K
+import Kadane as K
 
 if __name__ == '__main__':
     arr1 = [-2, 1, -3, 4, -1, 2, 1, -5, 4]
