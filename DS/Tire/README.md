@@ -2,6 +2,7 @@
 - 字典樹，又叫做單詞搜尋樹，也有人稱為prefix tree
 - 利用字串的特性來節省空間(EX: ten和tea都有te)
 - 除了root外每個node都代表一個char
+- 每個node會紀錄從root到此node是否為一個完整的string
 - Trie的高度為最常字串的長度
 
 ## Implement
