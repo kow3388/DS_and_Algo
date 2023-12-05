@@ -22,8 +22,8 @@
 Given a array **[11, 51, 11, 32, 7, 68, 93, 44, 87, 78]** using bucket sort to sort array as ascending order
 
 1. Create k buckets (we use k = 10 in this case)
-   So we separated [7~93] into k(10) groups : 
-   [7~15], [16~24], ..., [85~93]
+   So we separated [7 to 93] into k(10) groups : 
+   [7 to 15], [16 to 24], ..., [85 to 93]
 
 | b0   | b1   | b2   | b3  | b4  | b5  | b6  | b7  | b8  | b9  |
 | ---- | ---- | ---- | --- | --- | --- | --- | --- | --- | --- |
