@@ -1,6 +1,7 @@
-class topological_sort:
+class topological_sort_dfs:
     def __init__(self, graph: list[list[int]]):
         self.graph = graph
+        self.target = []
         self.visited = [False]*len(self.graph)
         self.stk = []
     
@@ -19,5 +20,6 @@ class topological_sort:
                 self._sort(i)
         
         for i in reversed(self.stk):
-            print(i, end = ' ')
-        print()
+            self.target.append(i)
+
+        print(self.target)

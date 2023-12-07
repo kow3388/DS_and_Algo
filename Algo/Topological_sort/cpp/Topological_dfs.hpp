@@ -2,14 +2,14 @@
 
 using namespace std;
 
-class topological_sort
+class topological_sort_dfs
 {
     public:
         vector<vector<int>> graph;
         vector<bool> visited;
         stack<int> stk;
 
-        topological_sort(vector<vector<int>> g)
+        topological_sort_dfs(vector<vector<int>> g)
         {
             graph = g;
             visited.resize(g.size(), false);
