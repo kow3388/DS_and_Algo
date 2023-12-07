@@ -5,7 +5,7 @@
 - Space complexity : O(V)
 - vertex(x) need to appear before vertex(y)
   EX: vertex(4) need to appear vertex(0)
-  ![DAG](https://hackmd.io/_uploads/BkSt4tv4a.jpg)
+  ![DAG](DAG.jpg)
 
     | vertex |   |   |
     | ------ | - | - |
