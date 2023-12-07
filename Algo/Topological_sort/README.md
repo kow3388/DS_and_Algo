@@ -127,27 +127,27 @@ class topological_sort:
 一樣以上圖為例
 
 1. 計算所有的in degree得  
-   node 0 : 2
-   node 1 : 2
-   node 2 : 1
-   node 3 : 1
-   node 4 : 0
+   node 0 : 2  
+   node 1 : 2  
+   node 2 : 1  
+   node 3 : 1  
+   node 4 : 0  
    node 5 : 0
 
 2. 將in degree = 0的push進queue中  
    queue : [4, 5] 
 
 3. 將node 4和node 5有指向的node in degree - 1  
-   node 0 : 0
-   node 1 : 1
-   node 2 : 0
+   node 0 : 0  
+   node 1 : 1  
+   node 2 : 0  
    node 3 : 1
 
 4. 將in degree = 0的push進queue中  
    queue : [4, 5, 0, 2] 
 
 5. 將node 0和node 2有指向的node in degree - 1  
-   node 1 : 1
+   node 1 : 1  
    node 3 : 0
 
 6. 將in degree = 0的push進queue中  
