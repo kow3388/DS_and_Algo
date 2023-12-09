@@ -5,7 +5,7 @@
 - Space complexity : O(V)
 - vertex(x) need to appear before vertex(y)
   EX: vertex(4) need to appear vertex(0)
-  ![DAG](https://hackmd.io/_uploads/BkSt4tv4a.jpg)
+  ![DAG](DAG.jpg)
 
     | vertex |   |   |
     | ------ | - | - |
@@ -26,25 +26,25 @@
 ### DFS Example
 以上圖為例
 
-1. 訪問node 0，將node 0設為visited，無法往下走，push進stack中
+1. 訪問node 0，將node 0設為visited，無法往下走，push進stack中  
    stack : [0] 
    
-2. 訪問node 1，將node 1設為visited，無法往下走，push進stack中
+2. 訪問node 1，將node 1設為visited，無法往下走，push進stack中  
    stack : [0, 1] 
 
-3. 訪問node 2，將node 2設為visited，往下走
+3. 訪問node 2，將node 2設為visited，往下走  
    stack : [0, 1]
 
-4. 訪問node 3，將node 3設為visited，無法往下走，push進stack中，回node 2
+4. 訪問node 3，將node 3設為visited，無法往下走，push進stack中，回node 2  
    stack : [0, 1, 3]
    
-5. node 2無法往下走，push進stack中
+5. node 2無法往下走，push進stack中  
    stack : [0, 1, 3, 2]
 
-6. 訪問node 4，將node 4設為visited，其他點已visited，push進stack中
+6. 訪問node 4，將node 4設為visited，其他點已visited，push進stack中  
    stack : [0, 1, 3, 2, 4]
 
-7. 訪問node 5，將node 5設為visited，其他點已visited，push進stack中
+7. 訪問node 5，將node 5設為visited，其他點已visited，push進stack中  
    stack : [0, 1, 3, 2, 4, 5]
 
 8. 得Res : [5, 4, 2, 3, 1, 0]
@@ -126,37 +126,37 @@ class topological_sort:
 ### Kahn Example
 一樣以上圖為例
 
-1. 計算所有的in degree得
-   node 0 : 2
-   node 1 : 2
-   node 2 : 1
-   node 3 : 1
-   node 4 : 0
+1. 計算所有的in degree得  
+   node 0 : 2  
+   node 1 : 2  
+   node 2 : 1  
+   node 3 : 1  
+   node 4 : 0  
    node 5 : 0
 
-2. 將in degree = 0的push進queue中
+2. 將in degree = 0的push進queue中  
    queue : [4, 5] 
 
-3. 將node 4和node 5有指向的node in degree - 1
-   node 0 : 0
-   node 1 : 1
-   node 2 : 0
+3. 將node 4和node 5有指向的node in degree - 1  
+   node 0 : 0  
+   node 1 : 1  
+   node 2 : 0  
    node 3 : 1
 
-4. 將in degree = 0的push進queue中
+4. 將in degree = 0的push進queue中  
    queue : [4, 5, 0, 2] 
 
-5. 將node 0和node 2有指向的node in degree - 1
-   node 1 : 1
+5. 將node 0和node 2有指向的node in degree - 1  
+   node 1 : 1  
    node 3 : 0
 
-6. 將in degree = 0的push進queue中
+6. 將in degree = 0的push進queue中  
    queue : [4, 5, 0, 2, 3] 
 
-7. 將node 0和node 2有指向的node in degree - 1
+7. 將node 0和node 2有指向的node in degree - 1  
    node 1 : 0
 
-8. 將in degree = 0的push進queue中
+8. 將in degree = 0的push進queue中  
    queue : [4, 5, 0, 2, 3, 1]
 
 9. 得Res : [4, 5, 0, 2, 3, 1]
