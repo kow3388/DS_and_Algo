@@ -1,6 +1,6 @@
 # Knapsack problem
 此題目為我們有一個背包，可負重K
-有n件物品，其價值為$V_{1}, V_{2}, ..., V_{n}$
+有n件物品，其價值為$V_{1}$, $V_{2}$, ..., $V_{n}$
 此n件物品重量為$W_{1}, W_{2}, ..., W_{n}$
 背包可裝的最大價值為多少？
 
@@ -32,7 +32,7 @@ Step:
    $I_{3} \ \frac{v}{p} = \frac{12}{3} = 4$
 2. Select the largest $\frac{v}{p}$ sequentially
 3. Chose $I_{1}$ first, 5 > 1, take it all, knapsack can still carry 4kg, knapsack value = 6
-4. Chose $I_{2}#, 4 > 2, take it all, Knapsack can still carry 2kg, Knapsack value = 16
+4. Chose $I_{2}$, 4 > 2, take it all, Knapsack can still carry 2kg, Knapsack value = 16
 5. Chose $I_{3}$, 3 > 2, so we take 2kg, knapsack can't carry anymore, knapsack value = 24
 
 
