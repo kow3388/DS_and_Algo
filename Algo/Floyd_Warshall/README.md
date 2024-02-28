@@ -8,7 +8,7 @@
 1. 可以有負邊，但不能有負cycle
 2. 可以計算有向圖遞移閉包
 3. 因為會將最短距離記錄起來，因此是DP的一種
-4. Time Complexity: O($n^{3}$)
+4. Time Complexity: O($V^{3}$)
 
 ## Example
 
