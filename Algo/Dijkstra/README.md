@@ -4,7 +4,7 @@
 3. 圖形中不可有負邊
 4. 想法類似於bfs，但每次選取目前coast最小的edge執行 (以min heap實做)
 5. 因為每次都挑選最小coast edge，因此是greedy的一種
-6. Time Complexity: O($n^{2}$)
+6. Time Complexity: O($(E + V)logV$)
 
 ## Example
 ![graph](graph.png)
