@@ -16,10 +16,15 @@ Start from node A, and the dst is E find the shortest path
 
 2. Update the dist
    dist = [0, 4, inf, inf, inf, inf]
+   
    dist = [0, 4, 2, inf, inf, inf]
+   
    dist = [0, 4, 2, inf, inf, inf]
+   
    dist = [0, 4, 2, inf, 7, inf]
+   
    $\vdots$
+   
    dist = [0, 4, 2, 4, 6, 5]
 
 ## Implement
