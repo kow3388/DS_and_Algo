@@ -3,6 +3,7 @@
 * [Tire](https://github.com/kow3388/DS_and_Algo/tree/main/DS/Tire)
 * [Union find](https://github.com/kow3388/DS_and_Algo/tree/main/DS/Union_find)
 * [heap](https://github.com/kow3388/DS_and_Algo/tree/main/DS/heap)
+* [AVL_tree](https://github.com/kow3388/DS_and_Algo/tree/main/DS/AVL_tree)
 
 ## Algo
 * [Bucket sort](https://github.com/kow3388/DS_and_Algo/tree/main/Algo/Bucket_sort)
