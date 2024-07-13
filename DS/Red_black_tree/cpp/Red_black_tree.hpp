@@ -62,6 +62,7 @@ class red_black_tree
 		}
 
 	private:
+		//find the minimum val node in tree
 		Node* minimum(Node *root)
 		{
 			if(!root || !root->left)
@@ -183,9 +184,11 @@ class red_black_tree
 
 		void _delete_node(Node *root, int val)
 		{
+			//delete node initial be null
 			Node *del_node = nullptr;
 			Node *inp_node, *fix_node;
 
+			//using BST to find the node need delete
 			while(root)
 			{
 				if(root->val == val)
@@ -199,6 +202,7 @@ class red_black_tree
 					root = root->right;
 			}
 
+			//There is no node need delete
 			if(!del_node)
 			{
 				cout << "There isn't node val = " << val << endl;
@@ -208,6 +212,7 @@ class red_black_tree
 			inp_node = del_node;
 			Color inp_ori_color = inp_node->color;
 
+			//find inplace node
 			if(!del_node->left)
 			{
 				inp_node = del_node->right;
@@ -256,18 +261,22 @@ class red_black_tree
 			root->right->color = Color::Black;
 		}
 
+		//inplace inp_node to del_node's position
 		void Transplant(Node *del_node, Node *inp_node)
 		{
+			//del_node is root
 			if(!del_node->parent)
-			{
 				this->root = inp_node;
-				return;
-			}
+
+			//del_node is left child
 			else if(del_node == del_node->parent->left)
 				del_node->parent->left = inp_node;
+
+			//del_node is right child
 			else
 				del_node->parent->right = inp_node;
 
+			//change inplace node's parent
 			if(inp_node)
 				inp_node->parent = del_node->parent;
 		}
