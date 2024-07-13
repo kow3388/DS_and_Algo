@@ -2,12 +2,14 @@
 
 using namespace std;
 
+//color class
 enum class Color
 {
 	Black,
 	Red
 };
 
+//define node of red black tree
 struct Node
 {
 	int val;
@@ -25,11 +27,13 @@ class red_black_tree
 	public:
 		Node *root;
 
+		//initial there is no node
 		red_black_tree()
 		{
 			root = nullptr;
 		}
 
+		//inorder to check is the red black tree is wrong or not
 		void inorder()
 		{
 			cout << "Inorder: ";
@@ -37,12 +41,14 @@ class red_black_tree
 			cout << endl;
 		}
 
+		//level order to check is the red black tree is wrong or not
 		void level_order()
 		{
 			cout << "Level order: " << endl;
 			_levelorder(this->root);
 		}
 
+		//insert node
 		void insert_node(int val)
 		{
 			Node *n = new Node(val);
@@ -152,6 +158,7 @@ class red_black_tree
 			root->parent = l;
 		}
 
+		//using BST to find the new node position
 		Node* _insert_node(Node *root, Node *n)
 		{
 			if(!root)
@@ -269,11 +276,14 @@ class red_black_tree
 		{
 
 			Node *uncle;
+			//two consecutive red node, need fix
 			while(root->parent && root->parent->color == Color::Red)
 			{
+				//the right child tree of root's grandparent is unbalance
 				if(root->parent == root->parent->parent->right)
 				{
 					uncle = root->parent->parent->left;
+					//need color change or not
 					if(uncle && uncle->color == Color::Red)
 						color_change(root->parent->parent);
 					else
