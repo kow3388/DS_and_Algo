@@ -13,7 +13,7 @@ if __name__ == '__main__':
     rb.inorder()
     rb.levelorder()
 
-    rb.delete_node(25)
+    rb.delete_node(20)
 
     rb.inorder()
     rb.levelorder()

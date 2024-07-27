@@ -1,6 +1,7 @@
 from enum import Enum
 from dataclasses import dataclass, field
 from queue import Queue
+from typing import Optional
 
 #color class
 class Color(Enum):
@@ -10,11 +11,11 @@ class Color(Enum):
 #define node of red black tree
 @dataclass
 class node:
-    val: int = fiedl(default=0)
+    val: int = field(default=0)
     color: Color = field(default=Color.Red)
-    parent: node = field(default=None)
-    left: node = field(default=None)
-    right: node = filed(default=None)
+    parent: Optional['node'] = field(default=None)
+    left: Optional['node'] = field(default=None)
+    right: Optional['node'] = field(default=None)
 
 class red_black_tree:
     #initial there is no node
@@ -29,7 +30,6 @@ class red_black_tree:
 
     def _inorder(self, root: node) -> None:
         if root == None:
-            print('There is no node !', end='')
             return
 
         self._inorder(root.left)
@@ -39,7 +39,7 @@ class red_black_tree:
     #level order to check red black tree is wrong or not
     def levelorder(self) -> None:
         print('Level order:')
-        self._levelorder()
+        self._levelorder(self.root)
 
     def _levelorder(self, root: node) -> None:
         if root == None:
@@ -47,7 +47,7 @@ class red_black_tree:
             return
 
         q = Queue()
-        q.push(root)
+        q.put(root)
 
         while q.qsize() != 0:
             s = q.qsize()
@@ -79,7 +79,7 @@ class red_black_tree:
             self.root = r
         elif root == root.parent.left:
             root.parent.left = r
-        else
+        else:
             root.parent.right = r
 
         r.parent = root.parent
@@ -130,7 +130,7 @@ class red_black_tree:
         #two consecutive red node, need fix
         while root.parent != None and root.parent.color == Color.Red:
             #the right child tree of root's grandparent is unbalance
-            if root.parent == root.parnet.parent.right:
+            if root.parent == root.parent.parent.right:
                 uncle = root.parent.parent.left
 
                 #need color change or not
@@ -142,7 +142,7 @@ class red_black_tree:
                         self._right_rotation(root)
 
                     root.parent.color = Color.Black
-                    root.parent.parent = Color.Red
+                    root.parent.parent.color = Color.Red
 
                     self._left_rotation(root.parent.parent)
             #ther left child tree of root's grandparent is unbalance
@@ -178,9 +178,10 @@ class red_black_tree:
         del_node = None
 
         #use BST to find the node need delete
-        while root not None:
+        while root is not None:
             if root.val == val:
                 del_node = root
+                break
 
             elif root.val > val:
                 root = root.left
@@ -213,7 +214,7 @@ class red_black_tree:
             if inp_node.parent != del_node:
                 self._Transplant(inp_node, fix_node)
 
-                if fix_node not None:
+                if fix_node is not None:
                     inp_ori_color = fix_node.color
 
             self._Transplant(del_node, inp_node)
@@ -245,7 +246,7 @@ class red_black_tree:
             del_node.parent.right = inp_node
 
         #change inplace node's parent
-        if inp_node not None:
+        if inp_node is not None:
             inp_node.parent = del_node.parent
 
     #return the minimum val node of tree
@@ -259,7 +260,7 @@ class red_black_tree:
         if root is None:
             return
 
-        while root not None and root != self.root and root.color == Color.Black:
+        while root is not None and root != self.root and root.color == Color.Black:
             if root == root.parent.left:
                 sibling = root.parent.right
                 
