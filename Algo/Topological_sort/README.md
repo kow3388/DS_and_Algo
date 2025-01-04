@@ -51,7 +51,7 @@
 
 ### Implement DFS
 #### C++
-```cpp=
+```cpp
 class topological_sort
 {
     public:
@@ -96,7 +96,7 @@ class topological_sort
 ```
 
 #### Python
-```python=
+```python
 class topological_sort:
     def __init__(self, graph: List[List[int]]):
         self.graph = graph
@@ -163,7 +163,7 @@ class topological_sort:
 
 ### Implement Kahn
 #### C++
-```cpp=
+```cpp
 class topological_sort_kahn
 {
 	public:
@@ -210,7 +210,7 @@ class topological_sort_kahn
 ```
 
 #### Python
-```python=
+```python
 class topological_kahn:
     def __init__(self, g: list[list[int]]):
         self.graph = g

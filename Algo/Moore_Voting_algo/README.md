@@ -49,7 +49,7 @@ Find the majority element
 
 ## Implement
 ### C++
-```cpp=
+```cpp
 # include <bits/stdc++.h>
 
 using namespace std;
@@ -87,7 +87,7 @@ class voting
 ```
 
 ### Python
-```python=
+```python
 class voting:
     def __init__(self):
         self.candidate = 0

@@ -42,7 +42,7 @@ Start from node A, and the dst is E find the shortest path
 
 ## Implement
 ### C++
-```cpp=
+```cpp
 #include <bits/stdc++.h>
 
 using namespace std;
@@ -93,7 +93,7 @@ class Dijkstra
 ```
 
 ### Python
-```python=
+```python
 import heapq
 
 class Dijkstra:

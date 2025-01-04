@@ -345,7 +345,7 @@
 
 ## Implement
 ### C++
-```cpp=
+```cpp
 #include <bits/stdc++.h>
 
 using namespace std;
@@ -385,7 +385,7 @@ class floyd_warshall
 ```
 
 ### Python
-```python=
+```python
 class floyd_warshall:
     def __init__(self, graph):
         self.n = len(graph)

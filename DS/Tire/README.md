@@ -8,7 +8,7 @@
 ## Implement
 ### C++
 Tree Node
-```cpp=
+```cpp
 class TrieNode
 {
     public:
@@ -24,7 +24,7 @@ class TrieNode
 ```
 
 Tire
-```cpp=
+```cpp
 class Trie {
 public:
     TrieNode *root;
@@ -76,7 +76,7 @@ public:
 
 ## Python
 Tree Node
-```python=
+```python
 class TrieNode:
     def __init__(self):
         self.is_word = False
@@ -84,7 +84,7 @@ class TrieNode:
 ```
 
 Tire
-```python=
+```python
 class Trie:
     def __init__(self):
         self.root = TrieNode()

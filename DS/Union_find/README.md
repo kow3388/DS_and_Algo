@@ -88,7 +88,7 @@ after find change node 3 to value 9
 ## Implement
 ### C++
 
-```cpp=
+```cpp
 #include <bits/stdc++.h>
 
 using namespace std;
@@ -295,7 +295,7 @@ class weighted_quick_union_path_compression
 ```
 
 ### Python
-```python=
+```python
 class quick_find:
     def __init__(self, n: int):
         self.parent = [i for i in range(n)]

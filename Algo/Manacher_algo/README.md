@@ -66,7 +66,7 @@ LPS_length radius: 0 1 0 3 0 5 0 3 0 1 0
 
 ## Implement
 ### C++
-```cpp=
+```cpp
 #include <bits/stdc++.h>
 
 using namespace std;
@@ -144,7 +144,7 @@ class manacher
 };
 ```
 ### Python
-```python=
+```python
 class manacher:
     def __init__(self, s: str):
         #original string

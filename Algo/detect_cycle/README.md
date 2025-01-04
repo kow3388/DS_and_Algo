@@ -15,7 +15,7 @@
 ## Implement
 ### C++
 
-```cpp=
+```cpp
 class check_cycle
 {
 	public:
@@ -63,7 +63,7 @@ class check_cycle
 ```
 
 ### Python
-```python=
+```python
 class check_cycle:
     def __init__(self, graph: list[list[int]]):
         self.graph = graph

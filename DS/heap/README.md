@@ -19,7 +19,7 @@ Heap sort就是將heap的elements一個一個pop出來，所以worst case為O(nl
 
 ## Implement
 ### C++
-```cpp=
+```cpp
 #include <bits/stdc++.h>
 
 using namespace std;
@@ -130,7 +130,7 @@ class heap
 ```
 
 ### Python
-```python=
+```python
 class heap:
     def __init__(self, arr):
         self.h = self.heapify(arr)

@@ -29,7 +29,7 @@ Start from node A, and the dst is E find the shortest path
 
 ## Implement
 ### C++
-```cpp=
+```cpp
 #include <bits/stdc++.h>
 
 using namespace std;
@@ -104,7 +104,7 @@ class bellman_ford
 ```
 
 ## Python
-```python=
+```python
 class bellman_ford:
     def __init__(self, graph):
         self.n = len(graph)

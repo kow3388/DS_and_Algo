@@ -32,7 +32,7 @@ KMP是想出這套演算法的三位教授名字的字首縮寫，無特別含�
 
 ## Implement
 ### C++
-```cpp=
+```cpp
 class KMP
 {
 	public:
@@ -106,7 +106,7 @@ class KMP
 ```
 
 ### Python
-```python=
+```python
 class KMP:
     def search(self, s: str, t: str) -> bool:
         n, m = len(s), len(t)

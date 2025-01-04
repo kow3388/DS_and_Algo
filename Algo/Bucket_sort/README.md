@@ -50,7 +50,7 @@ Given a array **[11, 51, 11, 32, 7, 68, 93, 44, 87, 78]** using bucket sort to s
 
 ## Implement
 ### C++
-```cpp=
+```cpp
 class Bucket_sort
 {
     public:
@@ -87,7 +87,7 @@ class Bucket_sort
 ```
 
 ### python
-```python=
+```python
 import collections
 
 class Bucket_sort:

@@ -86,7 +86,7 @@ Explanation for each case
 
 ## Implement
 ### C++
-```cpp=
+```cpp
 #include <bits/stdc++.h>
 
 using namespace std;
@@ -142,7 +142,7 @@ class knapsack
 ```
 
 ### Python
-```python=
+```python
 class knapsack:
     def __init__(self):
         self.dp = [] 

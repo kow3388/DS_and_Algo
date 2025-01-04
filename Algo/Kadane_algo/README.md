@@ -50,7 +50,7 @@ Given an array nums = **[−2, 1, −3, 4, −1, 2, 1, −5, 4]**, find the maxi
 
 ## Implement
 ### C++
-```cpp=
+```cpp
 template <typename T>
 class Kadane
 {
@@ -81,7 +81,7 @@ class Kadane
 ```
 
 ### Python
-```python=
+```python
 class Kadane:
     def algo(self, nums: list[int]) -> int:
         if len(nums) == 1:

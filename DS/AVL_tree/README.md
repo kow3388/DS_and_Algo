@@ -71,7 +71,7 @@ Time: O($log_{n})
 
 ## Implement
 ### C++
-```cpp=
+```cpp
 #include <bits/stdc++.h>
 
 using namespace std;
@@ -301,7 +301,7 @@ class AVL_tree
 ```
 
 ### Python
-```python=
+```python
 class Node:
     def __init__(self, val: int = 0):
         self.val = val
