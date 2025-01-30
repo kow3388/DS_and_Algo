@@ -19,3 +19,4 @@
 * [detect cycle](https://github.com/kow3388/DS_and_Algo/tree/main/Algo/detect_cycle)
 * [Manacher algo](https://github.com/kow3388/DS_and_Algo/tree/main/Algo/Manacher_algo)
 * [Z function](https://github.com/kow3388/DS_and_Algo/tree/main/Algo/z_function)
+* [Bipartite](https://github.com/kow3388/DS_and_Algo/tree/main/Algo/bipartite)
