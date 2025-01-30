@@ -20,3 +20,4 @@
 * [Manacher algo](https://github.com/kow3388/DS_and_Algo/tree/main/Algo/Manacher_algo)
 * [Z function](https://github.com/kow3388/DS_and_Algo/tree/main/Algo/z_function)
 * [Bipartite](https://github.com/kow3388/DS_and_Algo/tree/main/Algo/bipartite)
+* [Tree Diameter](https://github.com/kow3388/DS_and_Algo/tree/main/Algo/tree_diameter)
