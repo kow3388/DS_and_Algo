@@ -10,7 +10,7 @@ Union-find(並查集，又稱不相交集)
 ## Example
 有一個graph(如下圖)，其edge為
 [[0, 1], [0, 5], [1, 2], [1, 6], [2, 7], [3, 4], [3, 8], [4, 9]. [5, 6]]
-![graph](https://hackmd.io/_uploads/HyZEssMK6.jpg)
+![graph](graph.jpg)
 
 1. node 0和node 7是否connected?
 2. node 8和node 9是否connected?
